@@ -20,6 +20,25 @@ const projects = [
     demoUrl: "https://browser-artifact-timeline-builder.vercel.app/",
     githubUrl: "https://github.com/hamzee06/BrowserArtifact-TimelineBuilder",
   },
+  {
+    id: 3,
+    title: "California Boutique",
+    description:
+      "A high-end, mobile-first e-commerce storefront with a React + Vite frontend and a Node.js/Express REST API powering products, collections, cart, orders, and newsletter signups.",
+    image: "/Projects/project3.png",
+    tags: ["React", "Vite", "Node.js", "Express", "Tailwind CSS"],
+    demoUrl: "https://california-boutique.vercel.app/",
+    githubUrl: "https://github.com/hamzee06/California-Boutique",
+  },
+  {
+    id: 4,
+    title: "Performance Measurement Plan",
+    description:
+      "A full-stack performance management system for employee registration, role management, and review workflows — tracking execution metrics across 50+ active projects and cutting reporting latency by 80%.",
+    image: "/Projects/project4.png",
+    tags: ["React", "TypeScript", "ASP.NET Core", "SQL Server", "Entity Framework Core"],
+    githubUrl: "https://github.com/hamzee06/PMP",
+  },
 ];
 
 // ✅ Add your certificate image files here
@@ -83,14 +102,20 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
