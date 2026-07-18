@@ -26,18 +26,12 @@ export const ContactSection = () => {
                      <div className="flex items-start space-x-4">
                         <div className="p-3 rounded-full bg-primary/10 ">
                         <Phone className="h-6 w-6 text-primary"/></div>
-                        <div>
-                            <h4 className="font-medium">Phone Number</h4>
-                            <a href="tel:+92 3125431964" className="text-muted-foreground hover:text-primary transition-colors"> +92 (312) 5431964</a>
-                        </div>
+                        
                     </div>
                      <div className="flex items-start space-x-4">
                         <div className="p-3 rounded-full bg-primary/10 ">
                         <MapPin className="h-6 w-6 text-primary"/></div>
-                        <div>
-                            <h4 className="font-medium">Location</h4>
-                            <a  className="text-muted-foreground hover:text-primary transition-colors"> Quaid-e-Azam Colony Dhamial Campus Rawalpindi</a>
-                        </div>
+                       
                     </div>
                 </div>
                 <div className="pt-8">
