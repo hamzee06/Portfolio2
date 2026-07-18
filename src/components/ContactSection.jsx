@@ -23,16 +23,10 @@ export const ContactSection = () => {
                             <a href="hamzarafi773@gmail.com" className="text-muted-foreground hover:text-primary transition-colors"> hamzarafi773@gmail.com</a>
                         </div>
                     </div>
-                     <div className="flex items-start space-x-4">
-                        <div className="p-3 rounded-full bg-primary/10 ">
-                        <Phone className="h-6 w-6 text-primary"/></div>
+                    
                         
                     </div>
-                     <div className="flex items-start space-x-4">
-                        <div className="p-3 rounded-full bg-primary/10 ">
-                        <MapPin className="h-6 w-6 text-primary"/></div>
-                       
-                    </div>
+                     
                 </div>
                 <div className="pt-8">
                     <h4 className="font-medium mb-4">Connect with Me</h4>
